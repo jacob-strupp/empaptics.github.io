@@ -18,5 +18,5 @@ clf = GridSearchCV(svm.SVC(),params_grid)
 clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 print("Classification Report:",classification_report(y_test, y_pred))
-print("Cross-validation:",cross_val_score(clf, x, y, cv=10))
+
 
